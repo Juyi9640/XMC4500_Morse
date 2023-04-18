@@ -11,4 +11,10 @@ Extend Part A as follows:
 * The string is not sent continuously, but only once when Button1 is pressed down (not when it is released).
 * Once Button2 is pressed down (not when it is released), the time between the last and second last press of Button1 in milliseconds is sent once in Morse code via LED1.
     * If Button1 has not been pressed yet, send a single 0 digit.
-    * If Button1 has only been pressed once
+    * If Button1 has only been pressed once, send the time between boot and the first press of Button1.
+    * The time has to be sent in decimal notation.
+* While a transmission of Morse code is ongoing, any button press may be ignored.
+* If both bottons are pressed simultaneously, the first wins, and locks the other until it is released.
+
+Reference:       
+Assignment 1, Embedded Systems and Security, TUM
